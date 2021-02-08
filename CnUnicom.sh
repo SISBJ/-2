@@ -4,7 +4,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin && expor
 ## wget --no-check-certificate https://raw.githubusercontent.com/mixool/HiCnUnicom/master/CnUnicom.sh && chmod +x CnUnicom.sh && bash CnUnicom.sh membercenter 13800008888@112233 18388880000@123456
 ### bash <(curl -s https://raw.githubusercontent.com/mixool/HiCnUnicom/master/CnUnicom.sh) membercenter 13800008888@112233 18388880000@123456
 
-# 传入参数格式，支持多账号，手机号@密码必需：13800008888@112233 18388880000@123456
+# 传入参数格式，支持多账号，手机号@密码必需：16655824340@570434 18388880000@123456
 [[ $# != 0 ]] && all_parameter=($(echo $@)) || { echo 'Err  !!! Useage: bash this_script.sh membercenter 13800008888@112233 18388880000@123456'; exit 1; }
 all_username_password=($(echo ${all_parameter[*]} | grep -oE "[0-9]{11}@[0-9]{6}"| sort -u | tr "\n" " "))
 
